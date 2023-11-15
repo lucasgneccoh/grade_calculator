@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>Grade calculator</title>
+        <link rel="stylesheet" href="style.css" />
+        <!-- Very important to defer the script. If not, the script does not have access to some document elements. -->
+        <script src="script.js" defer></script>
+    </head>
+    <body>
+        <div class="container">
+            <div id="home" class="flex-center flex-column text-center">
+                <h1>Grade calculator</h1>
+                <h2>Total value: </h2> 
+                <h3 id="result">0</h3>
+                <a id="reset" class="btn">Reset</a>
+            </div>
+            
+            <div class="grades-container">
+                    <div class="grade-line">
+                        <input type="number" step="0.01" class="grade-value" value="0.0" /> <a class="grade-btn">Add</a>
+                    </div>
+                    
+                    <div class="grade-line">
+                        <input type="number" step="0.01" class="grade-value" value="0.0" /> <a class="grade-btn">Add</a>
+                    </div>
+                    
+                    <div class="grade-line">
+                        <input type="number" step="0.01" class="grade-value" value="0.0" /> <a class="grade-btn">Add</a>
+                    </div>
+            </div>
+                
+        </div>
+    </body>
+</html>
